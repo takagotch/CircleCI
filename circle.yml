@@ -1,0 +1,13 @@
+machine:
+  ruby:
+    version: 2.1.1
+  deployment:
+    production:
+      branch: master
+      commands:
+        - ./deploy_prod.sh
+    staging:
+      branch: staging
+      commands:
+        - ./deploy_staging.sh
+                                            
